@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="flex-v">
+    <p>Maximo de diez stikers</p>
+    <div class="flex-h">
+        <div class="flex-v">
+            <img src="img/descarga.jpg" class="flex-item">
+            <input name="" id="p-1" class="flex-item">
+        </div>
+        <div class="flex-v">
+            <img src="img/images emjois.jpg" class="flex-item" alt="">
+            <input name="" id="p-2" class="flex-item">
+        </div>
+        <div class="flex-v">
+            <img src="img/images.jpg" class="flex-item" alt="">
+            <input name="" id="p-3" class="flex-item">
+        </div>
+
+    </div>
+    <p id="result"> </p>
+    <button onclick="
+    n1 = Number (document.querySelector('#p-1').value)
+    n2 = Number (document.querySelector('#p-2').value)
+    n3 = Number (document.querySelector('#p-3').value)
+    suma = n1 + n2 + n3
+    element = document.querySelector('#result')
+    if(suma<= 10){
+        element.innerHTML = 'Llevas' + suma + 'elementos'
+    }
+    else {
+        element.innerHTML = 'Excedes el maximo de stickers'
+    }
+    "> Verificar </button>
+</body>
+</html>
